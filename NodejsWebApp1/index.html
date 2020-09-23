@@ -4,8 +4,11 @@
     <title>This is the title of the webpage!</title>
   </head>
   <body>
+    <p id="demo" onclick="myFunction()">Click me to change my HTML content (innerHTML).</p>
     <script>
-      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed!";
+      }
     </script>
     <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
   </body>
